@@ -1,0 +1,68 @@
+/* Général */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Images */
+  .logo {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    position: relative;
+    z-index: 99;
+  }
+
+
+/* S'assurer que les images remplissent l'espace de manière uniforme */
+#carouselExample img {
+    object-fit: cover; /* Ajuste les images pour remplir l'espace */
+    height: 100%;      /* Prend toute la hauteur disponible */
+    height: 600px;
+}  
+
+
+/* format et style */
+
+.footer {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+  }
+
+.section {
+    height: 300px;
+  }
+
+
+/* positionnement */
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+/* carte */
+#map {
+    height: 680px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+  }
+
+  /* boutton */
+.btn a {
+    text-decoration: none; /* Retirer le soulignement */
+    color: inherit; /* Utiliser la couleur du parent (le bouton) */
+}
